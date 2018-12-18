@@ -1,5 +1,106 @@
 @import url("https://fonts.googleapis.com/css?family=Aleo:400,700|Nanum+Gothic:400,700");
 /* kleuren */
+header {
+  background-color: #B84232;
+  height: 95vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  color: #ffffff;
+}
+
+.herken {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.herken h2 {
+  margin-top: 3.2em;
+}
+
+h3 {
+  font-weight: normal;
+  text-align: center;
+  margin-top: -0.6em;
+}
+
+.quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.quote h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 3vw;
+  margin-top: 3.2em;
+}
+
+.oorzaken-big p {
+  margin-bottom: 3.2em;
+}
+
+.oorzaken-big h2 {
+  margin-top: 3.2em;
+}
+
+.oorzaken-small {
+  margin-bottom: calc(100px + 3.2em);
+}
+
+.oorzaken-small p {
+  font-size: 1.8vmin;
+}
+
+.symptoms p {
+  font-size: 1.8vmin;
+  margin-bottom: 3.2em;
+}
+
+/* kleuren */
+header {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rij {
+  margin-top: 3.2em;
+}
+
+.lotgenoten {
+  background-color: #37313F;
+  padding: 2em;
+}
+
+.lotgenoten h2 {
+  color: #ffffff;
+}
+
+.lotgenoten p {
+  color: #ffffff;
+}
+
+.herstel-small p {
+  font-size: 1.8vmin;
+  margin-bottom: 190px;
+}
+
+/* kleuren */
 /* responsive */
 /*title postition*/
 /*alignment*/
@@ -45,7 +146,16 @@ nav {
   opacity: 0.9;
 }
 
-h1, h2 {
+.nav-item {
+  padding-left: 3.2em;
+}
+
+.navbar-brand h4 {
+  margin-left: 1em;
+  margin-top: 0.2em;
+}
+
+h1, h2, h3, h4 {
   font-family: "Aleo", serif;
   font-weight: bold;
   color: #37313F;
@@ -64,6 +174,15 @@ h2 {
   h2 {
     margin-bottom: 1em;
   }
+}
+
+h3 {
+  font-size: 2.4vw;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1.1 em;
 }
 
 p {

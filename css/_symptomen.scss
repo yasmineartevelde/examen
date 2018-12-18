@@ -1,0 +1,66 @@
+/* kleuren */
+$color4: #ffffff;
+$color5: #484848;
+$color6: #000;
+$color7: #37313F;
+$color8: #B84232;
+
+$fontset1: 'Aleo', serif;
+$fontset2: 'Nanum Gothic', sans-serif;
+
+
+header {
+    background-color: $color8;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        color: $color4;
+    }
+}
+.herken {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        margin-top: 3.2em;
+    }
+}
+h3 {
+    font-weight: normal;
+    text-align: center;
+    margin-top: -0.6em;
+}
+.quote {
+    display: flex;
+    justify-content: center;
+
+    h2 {
+        text-align: center;
+        font-weight: normal;
+        font-size: 3vw;
+        margin-top: 3.2em;
+    }
+}
+.oorzaken-big {
+    p {
+        margin-bottom: 3.2em;
+    }
+    h2 {
+        margin-top: 3.2em;
+    }
+}
+.oorzaken-small {
+    margin-bottom: calc(100px + 3.2em);
+
+    p {
+        font-size: 1.8vmin;
+    }
+}
+.symptoms {
+    p {
+        font-size: 1.8vmin;
+        margin-bottom: 3.2em;
+    }
+}

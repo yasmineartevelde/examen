@@ -1,0 +1,33 @@
+/* kleuren */
+$color4: #ffffff;
+$color5: #484848;
+$color6: #000;
+$color7: #37313F;
+$color8: #B84232;
+
+header {
+    justify-content: center;
+}
+.rij {
+    margin-top: 3.2em;
+}
+
+.lotgenoten {
+    background-color: $color7;
+    padding: 2em;
+
+    h2 {
+        color: $color4;
+    }
+
+    p {
+        color: $color4;
+    }
+}
+.herstel-small {
+    p {
+        font-size: 1.8vmin;
+        margin-bottom: 190px;
+    }
+}
+
