@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Aleo:400,700|Nanum+Myeongjo:400,700');
+@import url('https://fonts.googleapis.com/css?family=Aleo:400,700|Nanum+Gothic:400,700');
 /* kleuren */
 $color4: #ffffff;
 $color5: #484848;
@@ -7,16 +7,16 @@ $color7: #37313F;
 $color8: #B84232;
 
 $fontset1: 'Aleo', serif;
-$fontset2: 'Nanum Myeongjo', serif;
+$fontset2: 'Nanum Gothic', sans-serif;
 
 /* responsive */ 
-$breekpunt: 560px;
+$breekpunt: 400px;
 $fullvw: 100vw;
 $full: 100%;
 
 /*title postition*/
-$titlepostition: 510px;
-$subtitlepostition: 1135px;
+$titlepostition: 570px;
+$subtitlepostition: 1350px;
 
  /*alignment*/
 $left: left;
@@ -24,7 +24,7 @@ $right: right;
 $center: center;
 
 /*images*/
-$headerimage: '../assets/images/header.png';
+$headerimage: '../assets/images/headert.png';
 
 *{
     padding: 0;
@@ -41,11 +41,19 @@ body{
 }
 .img{
     position: relative;
-    left: -40px;
+    left: -5px;
+    top: -70px;
+    width: 70vw;
+    height: auto;
+
+    @media (min-width:$breekpunt){
+    position: relative;
+    left: -5px;
     top: -100px;
     width: 100vw;
     height: auto;
     //transform: scale(1.1);
+    }
 }
 nav{
     z-index: 2000;
@@ -62,7 +70,7 @@ h1 {
     font-size: 5.9vw;
 }
 h2 {
-    font-size: 2vw;
+    font-size: 3.8vw;
     margin-bottom: 0.7em;
 
     @media (min-width:$breekpunt){
@@ -70,32 +78,40 @@ h2 {
     }
 }
 p {
-    font-size: 1.2vw;
+    font-size: 2vmin;
     line-height: 1.6;
+    margin-bottom: 0.8em;
+
+    @media (min-width:$breekpunt){
+        line-height: 1.9;
+    }
 }
 footer {
     background-color: $color7;
     padding: 25px;
     color: $color4;
     text-align: $center;
-    margin-top: -125px;
-    font-size: 1.4vmin;
+    font-size: 1.5vmin;
+
 
     @media (min-width:$breekpunt){
         padding: 60px;
+        text-align: $center;
+        margin-top: -108px;
     }
 }
 .titel,
 .subtitel{
     max-width: 700px;
     position: absolute;
-    left: 24vw;
+    left: 27vw;
 }
 .titel{
-top: $titlepostition;
+    top: $titlepostition;
 }
 .subtitel{
-top: $subtitlepostition;
+    top: $subtitlepostition;
+
 }
 .active{
     a{
@@ -109,104 +125,101 @@ top: $subtitlepostition;
         top: 450px;
     }
     .subtitel{
-        top: 990px;
+        top: 950px;
     }
   }
 @media(max-width:1000px) {
     .titel{
-        top: 325px;
+        top: 350px;
     }
     .subtitel{
-        top: 780px;
-    }
-    footer {
-        margin-top: -119px;
-        padding: 50px;
+        top: 750px;
     }
 }
 @media(max-width:930px) {
     .titel{
-        top: 310px;
+        top: 330px;
     }
     .subtitel{
-        top: 730px;
-    }
-    footer {
-        padding: 47px;
+        top: 670px;
     }
 }
 @media(max-width:852px) {
     .titel{
-        top: 275px;
-    }
-    .subtitel{
-        top: 660px;
-    }
-    footer {
-        margin-top: -115px;
-    }
-}
-@media(max-width:780px) {
-    .titel{
-        top: 245px;
+        top: 300px;
     }
     .subtitel{
         top: 610px;
     }
-        
+}
+@media(max-width:780px) {
+        .titel{
+            top: 230px;
+        }
+        .subtitel{
+            top: 580px;
+        }
   }
 @media(max-width:700px) {
     .titel{
-        top: 210px;
+        top: 220px;
     }
     .subtitel{
-        top: 530px;
+        top: 500px;
     }
-    
 }
 @media(max-width:623px) {
     .titel{
-        top: 185px;
+        top: 160px;
     }
     .subtitel{
-        top: 470px;
+        top: 430px;
     }
 }
 @media(max-width:506px) {
-    .titel, .subtitel {
-        left: 20vw;
-    }
     .titel{
-        top: 140px;
-    }
-    .subtitel{
-        top: 380px;
-    }
-    footer {
-        padding: 30px;
-        margin-top: -110px;
-    }
-}
-@media(max-width:450px) {
-    .titel, .subtitel {
-        left: 20vw;
-    }
-    .titel{
-        top: 125px;
+        top: 150px;
     }
     .subtitel{
         top: 330px;
     }
+}
+@media(max-width:450px) {
+    .titel{
+        top: 120px;
+    }
+    .subtitel{
+        top: 300px;
+    }
+}
+@media(max-width:400px) {
+    .titel {
+        top: 235px;
+    }
+    .subtitel {
+        margin-top: 31px;
+        left: 0vw;
+
+        h2 {
+            color: $color4;
+            padding: 10px 2px 10px 25px;
+            background-color: $color7;
+        }
+        p {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
     footer {
-        margin-top: -108px;
-        padding: 25px;
+        margin-top: 113px;
     }
 }
 @media(max-width:350px) {
     .titel{
-        top: 90px;
+        top: 80px;
     }
     .subtitel{
-        top: 250px;
+        top: 220px;
     }
+
 }
